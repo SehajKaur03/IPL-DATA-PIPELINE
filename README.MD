@@ -49,7 +49,7 @@ The warehouse follows **Kimball dimensional modelling** principles:
 - **Fact table** holds the measurable values (match results, scores, margins)
 - **Dimension tables** hold the descriptive context used for slicing and filtering
 
-
+![Data Model](Images/Data%20Model.png)
 
 | Table | Type | Description |
 |---|---|---|
