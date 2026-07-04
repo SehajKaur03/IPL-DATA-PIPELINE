@@ -72,6 +72,7 @@ This project follows an **ELT** pattern rather than traditional ETL:
 
 This keeps the raw data intact in staging and makes transformations repeatable, debuggable, and version-controlled.
 
+![Store Procedue](Images/STORE%20PROD.png)
 
 
 ---
