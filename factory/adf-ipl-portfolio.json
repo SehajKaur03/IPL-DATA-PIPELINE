@@ -1,0 +1,15 @@
+{
+	"name": "adf-ipl-portfolio",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d4d184cf-fbd7-4741-b17e-b924c944aa0b",
+		"tenantId": "89cbc748-75b5-44cc-adf3-6203c6e2b501"
+	}
+}

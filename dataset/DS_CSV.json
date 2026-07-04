@@ -1,0 +1,133 @@
+{
+	"name": "DS_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "IPL_2026_Data.csv",
+				"container": "ipl-s-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Match_No",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "Day",
+				"type": "String"
+			},
+			{
+				"name": "Time",
+				"type": "String"
+			},
+			{
+				"name": "Venue",
+				"type": "String"
+			},
+			{
+				"name": "Venue_state",
+				"type": "String"
+			},
+			{
+				"name": "Venue_city",
+				"type": "String"
+			},
+			{
+				"name": "Team1",
+				"type": "String"
+			},
+			{
+				"name": "Team1_impact_player",
+				"type": "String"
+			},
+			{
+				"name": "Team2",
+				"type": "String"
+			},
+			{
+				"name": "Team2_impact_player",
+				"type": "String"
+			},
+			{
+				"name": "Match_stage",
+				"type": "String"
+			},
+			{
+				"name": "Toss_winner",
+				"type": "String"
+			},
+			{
+				"name": "Toss_winner_decision",
+				"type": "String"
+			},
+			{
+				"name": "First_ings_score",
+				"type": "String"
+			},
+			{
+				"name": "First_ings_wickets",
+				"type": "String"
+			},
+			{
+				"name": "Second_ings_score",
+				"type": "String"
+			},
+			{
+				"name": "Second_ings_wickets",
+				"type": "String"
+			},
+			{
+				"name": "Match_winner",
+				"type": "String"
+			},
+			{
+				"name": "Won_by",
+				"type": "String"
+			},
+			{
+				"name": "Margin",
+				"type": "String"
+			},
+			{
+				"name": "Player_of_the_match",
+				"type": "String"
+			},
+			{
+				"name": "top_scorer",
+				"type": "String"
+			},
+			{
+				"name": "Batsman_highscore",
+				"type": "String"
+			},
+			{
+				"name": "Best_bowling",
+				"type": "String"
+			},
+			{
+				"name": "Best_bowling_figure",
+				"type": "String"
+			},
+			{
+				"name": "Match_first_over",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
