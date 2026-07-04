@@ -80,8 +80,7 @@ This keeps the raw data intact in staging and makes transformations repeatable, 
 
 The final star schema feeds an interactive **Power BI dashboard** for easy analysis and decision-making — enabling views across teams, players, venues, and match outcomes.
 
-<!-- 📸 Add dashboard screenshot here -->
-![Power BI Dashboard](images/dashboard.png)
+![PowerBi Dashboad Page](Images/Dashboad%20Home%20page.png)
 
 ---
 
