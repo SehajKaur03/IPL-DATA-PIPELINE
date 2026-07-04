@@ -33,7 +33,7 @@ IPL 2026 CSVs  →  Azure Blob Storage  →  ADF Copy Activity  →  Staging (db
 ---
 
 ## ⚙️ ADF Pipeline
-
+![ADF Pipeline](/images/ADF Pipeline.png)
 
 The pipeline consists of two key activities running in sequence:
 
