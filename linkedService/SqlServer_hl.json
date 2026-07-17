@@ -11,10 +11,10 @@
 			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "sehaj",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiZTI2MzYzMy04ZTc5LTRlMGEtYWY0Yi00ZThkOTVmMTU3NWUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwNjYxNWY2Mi00ODMwLTQ2YTctYmQyZC1kNTU5YTQzMTg3YTQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
-			"referenceName": "hlserver",
+			"referenceName": "selfhosted-IR",
 			"type": "IntegrationRuntimeReference"
 		}
 	}
