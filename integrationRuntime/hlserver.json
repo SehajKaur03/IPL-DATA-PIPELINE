@@ -1,0 +1,6 @@
+{
+	"name": "hlserver",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
