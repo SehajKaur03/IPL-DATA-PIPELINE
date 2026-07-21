@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-ipl-portfolio"
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"SqlServer_hl_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+			"value": "https://iplstorage2026.blob.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS01,1433"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "ipl-set"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "crd-srv"
+		},
+		"SqlServer_hl_properties_typeProperties_server": {
+			"value": "192.168.10.224"
+		},
+		"SqlServer_hl_properties_typeProperties_database": {
+			"value": "player_profile"
+		},
+		"SqlServer_hl_properties_typeProperties_userName": {
+			"value": "sehaj"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
