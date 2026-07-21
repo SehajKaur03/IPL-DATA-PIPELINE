@@ -1,0 +1,144 @@
+{
+	"name": "DS_SQL_ONPREM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_hl",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pSchema": {
+				"type": "string"
+			},
+			"pTable": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "Match_No",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Time",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Venue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Venue_state",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Venue_city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Team1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Team1_impact_player",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Team2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Team2_impact_player",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Match_stage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Toss_winner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Toss_winner_decision",
+				"type": "nvarchar"
+			},
+			{
+				"name": "First_ings_score",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "First_ings_wickets",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Second_ings_score",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Second_ings_wickets",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Match_winner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Won_by",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Margin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Player_of_the_match",
+				"type": "nvarchar"
+			},
+			{
+				"name": "top_scorer",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Batsman_highscore",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Best_bowling",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Best_bowling_figure",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Match_first_over",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().pSchema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().pTable",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
