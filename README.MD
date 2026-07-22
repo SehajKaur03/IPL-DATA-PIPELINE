@@ -115,4 +115,4 @@ This repo is the live Git integration for the Azure Data Factory instance — th
 
 ---
 
-*Built by [Sehaj Kaur](https://github.com/SehajKaur03) — aspiring Data Analyst | SQL · Power BI · Azure · Python*
+*Built by [Sehaj Kaur](https://github.com/SehajKaur03) — aspiring Data Analyst/Engineer | SQL · Power BI · Azure · Python*
