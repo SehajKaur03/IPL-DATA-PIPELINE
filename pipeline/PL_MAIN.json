@@ -391,11 +391,11 @@
 				]
 			},
 			{
-				"name": "Stored procedure Fact",
+				"name": "Fact",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
-						"activity": "Stored procedure Venue",
+						"activity": "Venue",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -418,11 +418,11 @@
 				}
 			},
 			{
-				"name": "Stored procedure Team",
+				"name": "Team",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
-						"activity": "Stored procedure Player",
+						"activity": "Player",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -445,11 +445,11 @@
 				}
 			},
 			{
-				"name": "Stored procedure Venue",
+				"name": "Venue",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
-						"activity": "Stored procedure Team",
+						"activity": "Team",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -472,7 +472,7 @@
 				}
 			},
 			{
-				"name": "Stored procedure Player",
+				"name": "Player",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
@@ -552,6 +552,39 @@
 						}
 					}
 				]
+			},
+			{
+				"name": "Players Additional Info",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "Player",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "Sql_to_sql",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[GetPlayersExtra]"
+				},
+				"linkedServiceName": {
+					"referenceName": "SqlServer1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": [],
